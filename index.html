@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shridharshop – Amazon-style storefront</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="top">
+    <div class="logo">Shridhar<i>shop</i></div>
+    <form class="search" onsubmit="return false" role="search"><input id="q" placeholder="Search Shridharshop" aria-label="Search products"><button type="button" id="go" aria-label="Search">🔍</button></form>
+    <button class="cartbtn" id="cartbtn" aria-label="Open cart">🛒 <b id="count">0</b> Cart</button>
+  </div>
+  <nav id="nav"></nav>
+</header>
+<div class="hero"><h1>Great deals, delivered fast</h1><p>Browse electronics, home, books and more. Add items to your cart and check out in seconds.</p></div>
+<main id="main"></main>
+<footer>Shopzon is a demo storefront built for learning. It is not affiliated with Amazon, and no orders are placed.</footer>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="Shopping cart">
+  <div class="dh"><h2>Shopping cart</h2><button id="close" aria-label="Close cart">✕</button></div>
+  <div class="items" id="items"></div>
+  <div class="df"><p>Subtotal: <b id="sub">$0.00</b></p><button id="checkout">Proceed to checkout</button></div>
+</aside>
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
